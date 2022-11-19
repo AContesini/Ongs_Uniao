@@ -79,11 +79,11 @@ main{
     background-color: #0DCAF0;
  }
 section.module.parallax{
-    display:flexbox;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh!important;
-    width: 100%;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-position:50% 50% ;
@@ -91,11 +91,11 @@ section.module.parallax{
     background-size: cover;
 }
 section.module.parallax2{
-    display:flexbox;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     height: auto !important;
-    width: 100%;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-position:50% 50% ;
@@ -107,13 +107,20 @@ section.module.parallax:after{
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: linear-gradient( to bottom,#00000000 0%,#00000000 20% ,#00000000 40%,#00000000 60%,#000 100%);
+   
 }
 section.module.parallax-1,section.module.parallax2{
     background-image: url("image/a1/children-1_1980.jpg");
     background-size: cover;
   
 }
+ection.module.parallax-1,section.module.parallax2:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+   
 section.carousel1{
     margin: auto;
     padding: 0px 30px 10px 30px;
