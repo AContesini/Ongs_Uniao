@@ -21,11 +21,6 @@
 body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-repeat: no-repeat;/*não repetir imagem caso ultrapasse seu o display*/
-    background-position: center; /* para que  imagem de se ajuste a pagina*/
-    background-size:cover;/*cover ira fazer preencher o total da tela*/
-    background-attachment: fixed; /*para que imagem não role junto a página*/
-    height: 100vh;
 }
 
 .wrapper{
@@ -35,7 +30,7 @@ body{
 
 main{
     display: block;
-    
+    background-color: #ffff;
     margin: 0;
     padding: 0;
 }
@@ -75,7 +70,55 @@ main{
     margin-bottom: 0;
 
  }
- 
+ section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+ }
+ section.module.content{
+    padding: 40px 0;
+    background-color: #0DCAF0;
+ }
+section.module.parallax{
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh!important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position:50% 50% ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.module.parallax2{
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    height: auto !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position:50% 50% ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.module.parallax:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient( to bottom,#00000000 0%,#00000000 20% ,#00000000 40%,#00000000 60%,#000 100%);
+}
+section.module.parallax-1,section.module.parallax2{
+    background-image: url("image/a1/children-1_1980.jpg");
+    background-size: cover;
+  
+}
+section.carousel1{
+    margin: auto;
+    padding: 0px 30px 10px 30px;
+   
+}
 .card1 ,.card2,.carousel1 , .textopo{
     visibility: hidden;
 }
