@@ -86,9 +86,12 @@ section.module.parallax{
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-position:50% 50% ;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-backgroundisize:cover;
+    -moz-background-size:cover;
+    -o-backgrund-size:cover;
 }
 section.module.parallax2{
     display:flexbox;
@@ -99,8 +102,14 @@ section.module.parallax2{
     position: relative;
     overflow: hidden;
     background-position:50% 50% ;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-backgroundisize:cover;
+    -moz-background-size:cover;
+    -o-backgrund-size:cover;
+    
+
 }
 section.module.parallax:after{
     content: '';
