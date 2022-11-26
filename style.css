@@ -82,13 +82,15 @@ section.module.parallax{
     background-size: cover;
     background-attachment:fixed;
     height:80vh !important;
-    width: 100% !important;
+    width: 100vw !important;
+    background-position: center;
 }
 section.module.parallax2{
    background-size: cover;
    background-attachment:fixed;
    height:auto !important;
-   width: 100% !important;
+   width: 100vw !important;
+    background-position: center;
     
 
 }
